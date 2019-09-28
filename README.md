@@ -65,6 +65,3 @@ python3 main_teacher.py \
 This implementation largely borrows from blablabla...(unfinished)
 
 
-## Tips
-
-If you find any problems, please feel free to contact to the authors (jiaoxie1990@126.com (Jiao Xie), shaohuilin007@gmail.com(Shaohui Lin), ethan.zhangyc@gmail.com (Yichen Zhang), luolk@xmu.edu.cn (Linkai Luo)).
