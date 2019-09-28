@@ -4,7 +4,7 @@ PyTorch implementation for OD-cheap-convolution.
 
 
 
-![GAL-framework](https://user-images.githubusercontent.com/47294246/54805147-021eb500-4cb1-11e9-85ac-861ecbada3e1.png)
+![OD-framework](https://user-images.githubusercontent.com/47294246/54805147-021eb500-4cb1-11e9-85ac-861ecbada3e1.png)
 
 Illustration of our online distillation method with cheap convolutions. (a) The original network with standard convolutions. (b) Online distillation is performed on the compressed network with cheap convolutions to further improve its performance. First, a student network is formed by replacing its standard convolution with the cheap ones. Then, a strong teacher network is constructed online by concatenating the output features Z(i) from the same multiple student networks and adding the new classifier. During the training, mutual learning is conducted to improve the performance between teacher and students. For testing, the best student model in validation set is selected to be a compressed model. (Best viewed in color.)
 
@@ -58,14 +58,6 @@ python finetune.py \
 --job_dir experiment/resnet/ft_lambda_0.8_miu_1/ \
 --pruned 
 ```
-
-You can set `--pruned` to reuse the pruned model. 
-
-
-
-We also provide our baseline models below. Enjoy your training and testing!
-
-| [ResNet56](https://drive.google.com/open?id=1XHNxyFklGjvzNpTjzlkjpKc61-LLjt5T) | [Vgg-16](https://drive.google.com/open?id=1pnMmLEWAUjVfqFUHanFlps6fSu10UYc1) | [DenseNet-40](https://drive.google.com/open?id=1Ev0SH14lWB5QuyPWLbbUEwGhVJ68tPkb) | [GoogleNet](https://drive.google.com/open?id=1tLZHnycQc4oAJhZ4JNYET_xHwR9mcdZX) |
 
 
 
