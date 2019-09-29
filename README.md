@@ -61,6 +61,8 @@ python3 main_teacher.py \
 
 ## Acknowledgement
 
-This implementation largely borrows from blablabla...(unfinished)
+The shift convolution is implemented by referring to [shiftresnet-cifar](https://github.com/alvinwan/shiftresnet-cifar).
+
+
 
 
