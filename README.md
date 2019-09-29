@@ -8,17 +8,14 @@ PyTorch implementation for OD-cheap-convolution.
 
 Illustration of our online distillation method with cheap convolutions.
 
-## Abstract
-
-The large memory and computation consumption in convolutional neural networks (CNNs) has been one of the main barriers for deploying them on resource-limited systems. To this end, most cheap convolutions (e.g., group convolution, depth-wise convolution and shift convolution) have been recently used for memory and computation reduction but with the specific architecture designing. Furthermore, it results in a low discriminability of the compressed networks by directly replacing the standard convolution with these cheap ones. In this paper, we propose to use knowledge distillation to improve the performance of the compact student networks with the cheap convolutions. In our case the teacher is a network with the standard convolution, while the student is a simple transformation of the teacher architecture without complicated redesigning. In particular, we propose a novel online distillation method, which online constructs the teacher network without pre-training and conducts mutual learning between the teacher and student network, to improve the performance of student model. Extensive experiments demonstrate that the proposed approach achieves superior performance to simultaneously reduce memory and computation overhead of cutting-edge CNNs on different datasets, including CIFAR-10/100 and ImageNet ILSVRC 2012, compared to the state-of-the-art CNN compression and acceleration methods.
-
 
 ## Usage
 
+### Environment
+
 In this code, you can run our code on CIFAR10 dataset. The code has been tested by Python 3.6, [Pytorch 0.4.1](https://pytorch.org/) and CUDA 9.0 on Ubuntu 16.04.
 
-
-### Run examples
+### Examples
 
 In our implementation, there are totally three kinds of cheap convolution, including shift operation, depthwise convolution and group convolution. You can feel free to select any one of it by the hyperparameter `block_type` for setting it to 'Shift', 'DW' or 'Group' correspondingly.
 
